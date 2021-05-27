@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    line-height: 200px;
+}
+
+.parent{
+    height: 100vh;
+    border: 20px solid rgb(211, 19, 125);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child1{
+    height: 200px;
+    background: rgb(39, 61, 134);
+    flex: 1 1 300px;
+}
+
+.child2{
+    height: 200px;
+    background: rgb(172, 57, 53);
+    flex: 1 1 300px;
+}
+
+.child3{
+    height: 200px;
+    background: rgb(149, 43, 140);
+    flex: 1 1 300px;
+}
+
+.child4{
+    height: 200px;
+    background: rgb(99, 179, 141);
+    flex: 1 1 300px;
+    align-self: center;
+}

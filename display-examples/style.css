@@ -1,0 +1,81 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: beige;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+h1 {
+    background: linear-gradient(40deg,green 0%, purple 30%, red 65%, yellow 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.75px rgba(31, 31, 31, 0.5);
+}
+
+h1, p {
+    padding: 4px;
+}
+
+strong {
+    font-family: monospace;
+}
+
+.block-container {
+    display: block;
+    text-align: center;
+    outline: 4px solid blue;
+    padding: 10px;
+    margin: 10px;
+}
+
+.div-block {
+    background: rgb(194, 106, 106);
+    border: 1px dotted rgb(59, 59, 59);
+}
+
+.div-block:hover {
+    padding: 30px;
+}
+
+.div-inline-block {
+    display: inline-block;
+    background: rgb(106, 194, 187);
+    border: 1px dotted rgb(59, 59, 59);
+}
+
+.div-inline-block:hover {
+    padding: 30px;
+}
+
+.div-inline-flex {
+    display: inline-flex;
+    background: rgb(185, 201, 48);
+    border: 1px dotted rgb(59, 59, 59);
+}
+
+.div-inline-flex:hover {
+    padding: 30px;
+}
+
+.responsive-img {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+} 
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    outline: 4px solid blue;
+    padding: 10px;
+    margin: 10px;
+}

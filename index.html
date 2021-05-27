@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Display Examples</title>
+</head>
+<body>
+    <h1>Container and Layout Examples</h1>
+    <div class="navbar-container">
+        <ul>
+            <li class="navbar-menu"><a href="./index.html">Block</a></li>
+            <li class="navbar-menu"><a href="./flexbox-row.html">Flexbox (row)</a></li>
+            <li class="navbar-menu"><a href="./flexbox-column.html">Flexbox (column)</a></li>
+            <li class="navbar-menu"><a href="./grid.html">Grid</a></li>
+        </ul>
+    </div>
+    <h2 class="header-block">BLOCK</h2>
+    <hr> 
+    <p class="definition">HTML elements are block or inline elements by default. Block elements put themselves on a new line. Text tags (h1, p, etc.) are block. Pictures and links are inline. The <mark class="mark-block">span</mark> tag is used with inline elements whilst the <mark class="mark-block">div</mark> tag is used with block-level content. For centering an element, <mark class="mark-code">margin: auto</mark> is always a good try.</p>
+    <hr>
+    <p><strong>text-align:</strong> center</p>
+    <div class="container block-container">
+        <img class="responsive-img" src="https://placeimg.com/640/480/animals" alt="">
+        <img class="responsive-img" src="https://placeimg.com/640/480/forest" alt="">
+        <img class="responsive-img" src="https://placeimg.com/640/480/nature" alt="">
+        <p>Pictures are <strong>inline</strong> by default.</p>
+        <div class="div-block"><p><strong>block (no size set)</strong></p></div>
+        <div class="div-block div-block-sized"><p><strong>block 50% width</strong></p></div>
+        <div class="div-block div-block-sized margin-auto"><p><strong>block 50% width + margin auto</strong></p></div>
+        <div class="div-block div-block-sized div-block-align-right"><p><strong>block 50% + margin: 0 0 0 auto</strong></p></div>
+        <div class="div-inline-block"><p><strong>inline-block</strong></p></div>
+        <div class="div-inline-block"><p><strong>inline-block</strong></p></div>
+    </div>
+    
+</body>
+</html>

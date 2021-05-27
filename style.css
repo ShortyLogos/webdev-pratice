@@ -20,14 +20,17 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.75px rgba(31, 31, 31, 0.5);
-    padding-top: 12px;
+    padding-top: 18px;
+    padding-bottom: 6px;
 }
 
 h2 {
     margin: auto;
-    width: fit-content;
+    width: 50%;
+    min-width: 320px;
     padding: 10px 10px 10px 10px;
     margin-bottom: 20px;
+    margin-top: 30px;
     text-shadow: 1px 1px 2px wheat;
     border: 6px double wheat;
     border-radius: 12px;
@@ -46,7 +49,7 @@ h2 {
     background: 1px 2px rgb(130, 224, 130);
 }
 
-.header-column {
+.header-grid {
     background: 1px 2px rgb(163, 130, 224);
 }
 
@@ -84,7 +87,7 @@ strong {
     width: 50%;
     min-width: 320px;
     margin: auto;
-    font-size: 14px;
+    font-size: 16px;
     text-align: justify;
     line-height: 1.5;
 }
@@ -201,14 +204,18 @@ mark {
 
 /* MEDIA QUERIES */
 @media (max-width: 475px) {
+    h1 {
+        font-size: 1.45em;
+    }
+    h2 {
+        font-size: 1.20em;
+    }
     .navbar-container {
-        margin: 14px 5px 28px 5px;
-        justify-content: space-evenly;
+        margin: 14px 6px 22px 6px;
+        min-width: 360px;
     }
     .navbar-menu {
-        display: inline-flex;
-        padding: 2px 0px 2px 0px;
-        font-size: 13px;
+        padding: 2px -2px 2px -2px;
     }
 }
 

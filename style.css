@@ -26,9 +26,8 @@ h1 {
 
 h2 {
     margin: auto;
-    width: 50%;
-    min-width: 320px;
-    padding: 10px 10px 10px 10px;
+    width: fit-content;
+    padding: 10px 20px 10px 20px;
     margin-bottom: 20px;
     margin-top: 30px;
     text-shadow: 1px 1px 2px wheat;
@@ -205,17 +204,18 @@ mark {
 /* MEDIA QUERIES */
 @media (max-width: 475px) {
     h1 {
-        font-size: 1.45em;
+        font-size: 1.5em;
     }
     h2 {
         font-size: 1.20em;
     }
     .navbar-container {
         margin: 14px 6px 22px 6px;
-        min-width: 360px;
+        min-width: 325px;
     }
     .navbar-menu {
         padding: 2px -2px 2px -2px;
+        font-size: 15px;
     }
 }
 

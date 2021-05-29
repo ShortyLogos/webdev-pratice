@@ -16,6 +16,10 @@ main {
     align-items: center;
 }
 
+.box {
+    border: 2px solid blue;
+}
+
 .box1 {
     background: lightcoral;
     grid-area: box1;
@@ -38,4 +42,9 @@ main {
 .box3 {
     background: lightgreen;
     grid-area: box3;
+}
+
+.box4 {
+    background: lightgreen;
+    grid-area: box;
 }

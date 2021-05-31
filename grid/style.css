@@ -17,7 +17,7 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto', cursive;
+    font-family: 'Roboto', Helvetica, sans-serif;
     color: rgb(56, 16, 56);
     margin: auto;
     max-width: var(--max-width);
@@ -27,6 +27,10 @@ body {
 }
 
 /* HEADER */
+
+h1, header a {
+    font-family: 'Odibee Sans', sans-serif;
+}
 
 header {
     display: flex;
@@ -43,10 +47,10 @@ header a {
     color: var(--font-cl);
     text-shadow: 0.25em 0.25em var(--secondary-cl);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.20rem;
+    letter-spacing: 0.1em;
     padding: 0.3em 1em;
     text-transform: uppercase;
-    letter-spacing: 0.07em;
 }
 
 a::after {
@@ -72,7 +76,6 @@ header a:hover {
 }
 
 h1 {
-    font-family: 'Odibee Sans';
     font-size: 8vmin;
     text-transform: uppercase;
 }
@@ -185,10 +188,6 @@ footer {
         margin-bottom: 1.25em;
     }
 
-    header a {
-        font-size: 0.90rem;
-    }
-
     main {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -205,7 +204,7 @@ footer {
     a::after {
         height: 0.05em;
         background: var(--font-cl);
-        margin: 0 0 0 2.3em;
+        margin: 0 0 0 1.70em;
         height: 0.25em;
         width: 50%;
         box-shadow: 0.25em 0.25em var(--secondary-cl);

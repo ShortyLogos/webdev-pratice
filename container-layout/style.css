@@ -78,7 +78,8 @@ a, a:link, a:visited {
 
 a:hover {
     background: var(--shadow);
-    text-shadow: 1px 2px var(--fill);
+    text-shadow: -1px 1px var(--fill);
+    text-shadow: 1px 1px var(--fill);
 }
 
 hr {
@@ -137,7 +138,7 @@ mark {
     margin-top: -12px;
     margin-bottom: 28px;
     justify-content: center;
-    padding: 9px 12px 9px 12px;
+    padding: 8px 12px 8px 12px;
     background: var(--fill);
     border: 1px solid var(--shadow);
     border-radius: 12px;

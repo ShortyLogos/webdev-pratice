@@ -1,8 +1,12 @@
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* GLOBAL */
 
 :root {
     --font-cl: rgba(255, 255, 255, 0.877);
@@ -12,7 +16,6 @@
     var(--secondary-cl));
     --max-width: 1400px;
 }
-
 
 body {
     display: flex;
@@ -26,11 +29,28 @@ body {
     min-height: 100vh;
 }
 
-/* HEADER */
-
-h1, header a {
+h1, h2, header a {
     font-family: 'Odibee Sans', sans-serif;
 }
+
+h2, header a {
+    letter-spacing: 0.1em;
+}
+
+
+h1 {
+    font-size: 8vmin;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 4.5vmin;
+    letter-spacing: ;
+    text-transform: uppercase;
+}
+
+
+/* HEADER */
 
 header {
     display: flex;
@@ -48,7 +68,6 @@ header a {
     text-shadow: 0.25em 0.25em var(--secondary-cl);
     text-decoration: none;
     font-size: 1.20rem;
-    letter-spacing: 0.1em;
     padding: 0.3em 1em;
     text-transform: uppercase;
 }
@@ -73,11 +92,6 @@ header a:hover {
 #navbar-container {
     display: flex;
     align-self: flex-end;
-}
-
-h1 {
-    font-size: 8vmin;
-    text-transform: uppercase;
 }
 
 
@@ -167,7 +181,7 @@ main, .box {
 footer {
     bottom: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .copyright {
@@ -176,7 +190,8 @@ footer {
     color: var(--font-cl);
     text-shadow: 0em 0.1em 0.085em var(--secondary-cl);
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
 }
 
 /* MEDIA QUERIES */
@@ -190,6 +205,11 @@ footer {
 
     main {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    main, header, footer {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .box {
@@ -215,8 +235,9 @@ footer {
 @media (max-width: 540px) {
 
     main, header, footer {
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-radius: 0;
     }
 
     main {

@@ -10,15 +10,21 @@
 }
 
 body {
-    color: rgb(25, 49, 41);
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color: rgb(27, 27, 27);
     background-color: var(--clr-secondary);
+}
+
+header, main {
+    display: flex;
+    padding: 0.5em;
 }
 
 header
 {
-    display: flex;
+    padding-left: 2.3em;
+    width: auto;
     min-height: 5em;
-    padding: 0.5em;
     align-items: flex-end;
     text-shadow: 0 0.1em 0.1em var(--clr-secondary);
     box-shadow: 0 0.05em 0.3em 0.1em rgba(41, 41, 41, 0.288);
@@ -28,4 +34,11 @@ header
 header h1 {
     margin-left: 0.1em;
     margin-bottom: 0.1em;
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+}
+
+main {
+    font-size: 0.95rem;
+    margin: 1em 2em;
+    line-height: 1.6em;
 }

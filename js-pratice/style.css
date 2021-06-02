@@ -5,8 +5,8 @@
 }
 
 :root {
-    --clr-primary: darkgoldenrod;
-    --clr-secondary: rgb(246, 255, 232);
+    --clr-primary: rgb(211, 211, 211);
+    --clr-secondary: rgb(255, 255, 255);
 }
 
 body {
@@ -25,10 +25,15 @@ header
     padding-left: 2.3em;
     width: auto;
     min-height: 5em;
+    justify-content: space-between;
     align-items: flex-end;
     text-shadow: 0 0.1em 0.1em var(--clr-secondary);
-    box-shadow: 0 0.05em 0.3em 0.1em rgba(41, 41, 41, 0.288);
+    box-shadow: 0 0.03em 0.1em 0.1em rgba(14, 14, 14, 0.192);
     background-color: var(--clr-primary);
+    background-image: url(https://images.pexels.com/photos/1235706/pexels-photo-1235706.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+    background-position: 100% 50%;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
 }
 
 header h1 {
@@ -37,8 +42,21 @@ header h1 {
     font-family: 'Oleo Script', Helvetica, sans-serif;
 }
 
+.header-img {
+
+    width: px;
+    height: auto;
+    object-fit: contain;
+}
+
 main {
     font-size: 0.95rem;
     margin: 1em 2em;
     line-height: 1.6em;
+}
+
+@media (max-width: 500px) {
+    header {
+    background-position: 300% 50%;
+    }
 }

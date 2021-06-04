@@ -1,5 +1,4 @@
 //// =========== ***VARIABLE DECLARATION*** ========== ////
-
 let message;
 message = 'Hello World'; // store the string
 
@@ -12,7 +11,6 @@ let message = 'Hello World !';
 alert(message); // Hello World !
 
 // We can also declare multiple variables in one line:
-
 let user = 'John', age = 25, message = 'Hello World !';
 
 // But it is NOT recommended. For the sake of readability, use a single line per variable.

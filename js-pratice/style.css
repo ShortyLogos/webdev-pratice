@@ -1,18 +1,27 @@
+/*===================================== 
+================ RESET ================ 
+=======================================*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
 }
 
+/*===================================== 
+================ GLOBAL =============== 
+=======================================*/
 :root {
-    --clr-primary: rgb(211, 211, 211);
-    --clr-secondary: rgb(255, 255, 255);
+    --clr-primary: rgb(152, 192, 162);
+    --clr-secondary: rgb(139, 184, 150);
+    --clr-tertiary: #c098a7;
+    --clr-background: rgb(255, 255, 255);
 }
 
 body {
     font-family: 'Open Sans', Helvetica, sans-serif;
     color: rgb(27, 27, 27);
-    background-color: var(--clr-secondary);
+    background-color: var(--clr-background);
 }
 
 header, main {
@@ -20,15 +29,15 @@ header, main {
     padding: 0.5em;
 }
 
+/*====================================== 
+================ HEADER ================ 
+========================================*/
 header
 {
-    padding-left: 2.3em;
+    display: flex;
     width: auto;
-    min-height: 5em;
     justify-content: space-between;
     align-items: flex-end;
-    text-shadow: 0 0.1em 0.1em var(--clr-secondary);
-    box-shadow: 0 0.03em 0.1em 0.1em rgba(14, 14, 14, 0.192);
     background-color: var(--clr-primary);
     background-image: url(https://images.pexels.com/photos/1235706/pexels-photo-1235706.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
     background-position: 100% 50%;
@@ -36,27 +45,133 @@ header
     background-repeat: no-repeat;
 }
 
+:is(header) h1, li, ::placeholder {
+    text-shadow: 0 0.1em 0.03em var(--clr-background);
+}
+
 header h1 {
-    margin-left: 0.1em;
-    margin-bottom: 0.1em;
+    margin: 0.3em 0 0.1em 0.3em;
     font-family: 'Oleo Script', Helvetica, sans-serif;
 }
 
-.header-img {
-
-    width: px;
-    height: auto;
-    object-fit: contain;
+header, section {
+    box-shadow: 0 0.1em 0.1em 0.1em var(--clr-primary);
 }
 
+.nav__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    /* outline: 4px solid purple; */
+    align-items: baseline;
+}
+
+.nav__container > li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+input[type=text] {
+    background-color: rgba(233, 233, 233, 0.555);
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 4px 3px;
+    font-size: 1rem;
+}
+
+.nav__search {
+    flex: 1;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 2px solid var(--clr-background);
+    background-color: rgba(51, 51, 51, 0.521);
+    color: var(--clr-background);
+    transition: background-color 200ms ease-in-out, border 200ms ease-in-out;
+}
+
+input[type=text]:focus::placeholder {
+    color: transparent;
+    text-shadow: none;
+    transition: color 250ms ease-in-out, text-shadow 250ms ease-in-out;
+}
+
+
+/*====================================== 
+================= MAIN ================= 
+========================================*/
 main {
     font-size: 0.95rem;
     margin: 1em 2em;
     line-height: 1.6em;
 }
 
-@media (max-width: 500px) {
+section {
+    background-color: var(--clr-primary);
+    padding: 1.8em 1.5em;
+    border-radius: 3px;
+    border: 1px solid var(--clr-secondary);
+}
+
+/*======================================= 
+============= MEDIA QUERIES ============= 
+=========================================*/
+@media (max-width: 660px) {
     header {
-    background-position: 300% 50%;
+        background-position: 80px 50%;
+        display: block;
+    }
+
+    .nav__container {
+        flex-wrap: wrap;
+    }
+    
+    .nav__container > li {
+        margin-left: 0;
+        text-align: center;
+        flex-basis: 50%;
+    }
+
+    .nav__container > li {
+        margin: 0;
+    }
+
+    input[type=text] {
+        text-align: center;
+    }
+
+    main {
+        margin: 1em 0;
+        padding: 0.5em 0;
+    }
+
+    section {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 460px) {
+
+    header h1 {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 0.1em;
+    }
+
+    .nav__container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__container > li {
+        margin: 0.2em 0;
+        text-align: center;
+        flex-basis: 100%;
+    }
+
+    .nav__search {
+        order: 1;
     }
 }

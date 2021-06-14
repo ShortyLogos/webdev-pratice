@@ -114,6 +114,14 @@ section {
     border: 1px solid var(--clr-secondary);
 }
 
+button {
+    margin-top: 1em;
+    padding: 15px 22px;
+    font-size: 1.15rem;
+    background-color: var(--clr-tertiary);
+    border-radius: 10px;
+}
+
 /*======================================= 
 ============= MEDIA QUERIES ============= 
 =========================================*/

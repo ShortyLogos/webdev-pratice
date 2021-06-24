@@ -1,0 +1,41 @@
+:root {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: arial;
+    color: #333;
+}
+
+h1{
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 20px auto;
+    text-align: center;
+}
+
+form{
+    width: 500px;
+    margin: auto;
+}
+
+input{
+    display: block;
+    padding: 8px 16px;
+    font-size: 1.25rem;
+    margin: 25px auto 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    outline: none !important;
+}
+/* 
+::placeholder {
+    font-size: 1.5rem;
+} */

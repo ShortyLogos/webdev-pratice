@@ -25,7 +25,6 @@ body {
 }
 
 header, main {
-    display: flex;
     padding: 0.5em;
 }
 
@@ -102,7 +101,7 @@ input[type=text]:focus::placeholder {
 ================= MAIN ================= 
 ========================================*/
 main {
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin: 1em 2em;
     line-height: 1.6em;
 }
@@ -115,11 +114,20 @@ section {
 }
 
 button {
-    margin-top: 1em;
+    display: block;
+    margin: 1.25em auto;
     padding: 15px 22px;
     font-size: 1.15rem;
     background-color: var(--clr-tertiary);
     border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.people {
+    font-size: 0.80rem;
 }
 
 /*======================================= 

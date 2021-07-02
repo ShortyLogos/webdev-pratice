@@ -133,7 +133,7 @@ console.log(resultTwo);
 
 
 // callbacks functions & foreach
-// Jusqu'à maintenant, on a passé des strings et des numbers comme paramètres dans les fonctions. Il est possible de passer des fonctions comme paramètres d'autres fonctions. C'est ce qu'on appelle une callback function.
+// Jusqu'à maintenant, on a passé des strings et des numbers comme paramètres dans les fonctions. Il est possible de passer des fonctions comme paramètres d'autres fonctions. C'est ce qu'on appelle une callback function...
 
 const myFunc = (callbackFunc) => {
     // do something

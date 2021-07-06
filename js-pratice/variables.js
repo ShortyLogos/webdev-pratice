@@ -133,7 +133,7 @@ console.log(resultTwo);
 
 
 // callbacks functions & foreach
-// Jusqu'à maintenant, on a passé des strings et des numbers comme paramètres dans les fonctions. Il est possible de passer des fonctions comme paramètres d'autres fonctions. C'est ce qu'on appelle une callback function...
+// Jusqu'à maintenant, on a passé des strings et des numbers comme paramètres dans les fonctions. Il est possible de passer des fonctions comme paramètres d'autres fonctions. C'est ce qu'on appelle une callback function..
 
 const myFunc = (callbackFunc) => {
     // do something
@@ -190,9 +190,29 @@ people2.forEach(person => {
 console.log(html);
 ul.innerHTML = html;
 
+// SCOPING ----- : this apply to functions, but that does NOT apply for loop block codes (e.g. for() {...} and if() {...}. They look similar, but they are not the same thing. Don't get confused.) The ReferenceError: "x" is not defined error is one of the most common you'll encounter. If you get this error and you are sure that you have defined the variable in question, check what scope it is in.
 
+// FUNCTIONS INSIDE FUNCTIONS --------- : Keep in mind that you can call a function from anywhere, even inside another function.  This is often used as a way to keep code tidy — if you have a big complex function, it is easier to understand if you break it down into several sub-functions:
 
+// function myBigFunction() {
+//  let myValue;
 
+//   subFunction1();
+//   subFunction2();
+//   subFunction3();
+// }
+
+// function subFunction1() {
+//   console.log(myValue);
+// }
+
+// function subFunction2() {
+//   console.log(myValue);
+// }
+
+// function subFunction3() {
+//   console.log(myValue);
+// }
 
 
 // --- Exercice avec le bouton de la page HTML ----
@@ -202,9 +222,7 @@ const pressMe = document.querySelector('button');
 pressMe.onclick = function() {
     let userName = prompt('What is your name?');
     alert('Hello ' + userName + ', nice to see you!');
-}
-
-
+};
 
 
 

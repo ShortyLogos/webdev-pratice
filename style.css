@@ -2,21 +2,59 @@
 /* RESET */
 * {
     margin: 0;
-    padding: 10px;
+    padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #388874;
+    --dark-color: rgb(19, 19, 19);
+    --pale-color: rgb(241, 241, 241);
+    --shadow-color: rgb(197, 197, 197);
 }
 
 body {
     text-align: center;
     font-size: 16px;
-    font-family: monospace;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(24, 24, 24);
-    --pale-color: rgb(241, 241, 241);
-    --shadow-color: rgb(197, 197, 197);
+    background-color: var(--accent-color);
+    background-image:
+    repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+    linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+    background-size: 70px 120px;
 }
 
-a {
-    padding: 6px 7px 6px 7px;
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div .title {
+    margin: 1em;
+    color: white;
+}
+
+.menu {
+    margin-bottom: 20vh;
+    padding: 0.5em;
+    display: grid;
+    text-align: left;
+    grid-template-columns: 30px 1fr;
+    width: fit-content;
+    background: var(--pale-color);
+    border: 1px solid var(--shadow-color);
+    box-shadow: 0px 4px var(--shadow-color);
+    border-radius: 12px;
+}
+
+.menu a {
+    padding: 6px 7px;
     margin: 6px 4px 6px 10px;
     color: rgb(24, 24, 24);
     text-decoration: none;
@@ -24,28 +62,9 @@ a {
     border-radius: 12px;
 }
 
-a:hover {
+.menu a:hover {
     background: var(--shadow-color);
     text-shadow: 1px 2px 1px var(--pale-color);
-    font-weight: 600;
-}
-
-.container {
-    display: grid;
-    position: absolute;
-    text-align: left;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin: auto;
-    grid-template-columns: 40px 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: fit-content;
-    padding: 3px 5px 3px 0px;
-    background: var(--pale-color);
-    border: 1px solid var(--shadow-color);
-    box-shadow: 0px 4px var(--shadow-color);
-    border-radius: 12px;
 }
 
 .f-icon {

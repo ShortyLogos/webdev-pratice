@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type=color] {
+    width: 46px;
+    margin: .4rem;
+    padding: 4px;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: cornsilk;
+}
+
+.pick-me-a-color {
+    width: 500px;
+    padding: 50px;
+    margin: 5vh auto 15vh;
+    border: solid 2px rgba(34, 34, 34, 0.795);
+    border-radius: 3px;
+    background-color: white;
+}
+
+.color-picker {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.info p {
+    margin: 10px 0;
+}
+
